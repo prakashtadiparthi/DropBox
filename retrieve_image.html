@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>Prakash Tadiparthi    1001360074</h1>
+<h3>Images </h3>
+
+ {% for i in result %}
+     <div>
+      <img src="data:;base64,{{i['image']}}" height="42" width="42"/>
+	  <br>
+	  <b>{{ i['uname'] }}</b>
+
+	<p>Uploaded time:{{i['date']}}</p>
+	<br>
+	<div style="width: 400px; height: 50px; overflow: auto;">{{i['comments']}}</div>
+	
+     </div>
+
+ {% endfor %}
+ 
+ 
+</body>
+</html>

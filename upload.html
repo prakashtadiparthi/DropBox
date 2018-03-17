@@ -1,0 +1,49 @@
+<head>
+	<title>Python Starter Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<link rel="stylesheet" href="stylesheets/style.css" />-->
+</head>
+<body>
+	<table>
+		
+		<form action="{{url_for('upload')}}" enctype="multipart/form-data" method="post">
+		<h1>PRAKASH TADIPARTHI    1001360074     </h1>
+		<h1 nae = 'message'>Click Submit to Upload</h1>
+		<input type='file' name='myfile'/>
+		<input type="text" name="comments" maxlength="100"/>
+		<button name="submit "value= "Submit">Submit</button>
+
+		
+		</form> 
+
+	</table>
+	
+	
+	
+    <form action="{{url_for('retrieve_image')}}">
+	<button name="display "value= "display">Retrive Images</button>
+	</form>
+	
+	<form action="{{url_for('show')}}">
+	<button name="logout "value= "logout">List Image Names</button>
+	</form>
+	
+	<br>
+	
+	<form action="{{url_for('getSomething')}}" enctype="multipart/form-data" method="post"> 
+		<h1 id = "message">Enter Number</h1>
+		<input type="text" name="num1"/>
+		<button name="ok "value= "ok">Enter</button>
+		
+	</form>
+	
+	
+	
+	<form action="{{url_for('logout')}}">
+	<button name="logout "value= "logout">Logout</button>
+	</form>
+	<form id="RDS_specific" action="/display_time" method="GET" enctype = "multipart/form-data">
+	<input type="submit" value="Submit" ></input></form>
+	
+</body>
+</html>
